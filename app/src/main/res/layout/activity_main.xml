@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal"
+    tools:context="com.example.fujitsu.cameratest.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sabz_ofoq"
+        android:id="@+id/kadrt1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/qemez_ofoq"
+        android:id="@+id/kadrt2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/capture"
+                android:clickable="true"
+                android:onClick="btn"
+               android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="47dp"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ofoqi"
+                android:src="@drawable/ofoghi"
+                android:clickable="true"
+                android:onClick="ofoq"
+                android:layout_below="@+id/btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/ofoqi"
+                android:id="@+id/relativeLayout"
+                android:layout_alignParentRight="true">
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/amodi"
+                android:src="@drawable/amodi"
+                android:clickable="true"
+                android:onClick="amod"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+               android:layout_below="@+id/relativeLayout" />
+        </RelativeLayout>
+
+</RelativeLayout>
